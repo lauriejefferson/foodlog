@@ -1,3 +1,7 @@
+# Foodlog
+
+This is the completed app for the Youtube tutorial [Ruby on Rails Crash Course](https://www.youtube.com/watch?v=B3Fbujmgo60)
+
 # Rails on Replit
 
 This is a template to get you started with Rails on Replit. It's ready to go so you can just hit run and start coding!
