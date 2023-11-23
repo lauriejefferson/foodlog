@@ -11,10 +11,10 @@
   </head>
 
   <body>
-    <%= render "shared/header" %>
-      
-    <% if notice.present? %>
-    <p class="notification is-link is-light"><%= notice %></div>
+    <%= render "shared/navbar" %>
+    <% if notice.present? && user_signed_in? %>
+      <p class="notification is-link is-light"><%= notice %></div>
+      <p>Hello <%= current_user.email %></p>
     <% end %>
 
     <% if alert.present? %>
