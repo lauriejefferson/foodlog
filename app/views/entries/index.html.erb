@@ -1,6 +1,8 @@
 <% content_for :title do %>
   Foodlog &ndash; <%= DateTime.now.to_s(:nice_date) %>
 <% end %>
+
+<%= pie_chart Entry.group(:meal_type).count %>
   <div class="columns mt-6 is-centered">
     <% @entries.each do |entry| %>
       <div class="column is-one-quarter">
